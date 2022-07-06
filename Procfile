@@ -1,1 +1,1 @@
-web: gunicorn semaenergy.wsgi
+web: gunicorn semaenergy.wsgi --log-file -
