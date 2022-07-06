@@ -123,3 +123,9 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import django_heroku
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# Activate Django-Heroku.
+django_heroku.settings(locals())
