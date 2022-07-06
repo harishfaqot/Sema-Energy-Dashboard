@@ -1,4 +1,3 @@
-from asyncio.windows_events import NULL
 from django.shortcuts import render, redirect, reverse
 from django.http import response
 import pyrebase
