@@ -1,4 +1,4 @@
-"""semaenergy URL Configuration
+"""SEM_WEB URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -13,9 +13,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django import views
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
+from django.views.static import serve
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('user.urls')),
+    #url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}), 
+    #url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]

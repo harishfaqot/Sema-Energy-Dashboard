@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Register - Smart Energy Meter</title>
+    <meta name="description" content="Smart Energy Meter Universitas Pertamina
+Welcome to our project, you can see our progress and feature that we made hehe :">
+    <link rel="stylesheet" href="{% static 'assets2/bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="{% static 'assets2/fonts/fontawesome-all.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets2/fonts/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets2/fonts/fontawesome5-overrides.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets2/css/untitled-1.css'%}">
+    <link rel="stylesheet" href="{% static 'assets2/css/untitled.css'%}">
+</head>
+
+<body class="bg-gradient-primary">
+    <div class="container">
+        <div class="card shadow-lg o-hidden border-0 my-5">
+            <div class="card-body p-0">
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-flex">
+                        <div class="flex-grow-1 bg-register-image" style="background: url(&quot;{% static 'assets2/img/programming.svg'%}&quot;) center no-repeat;"></div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h4 class="text-dark mb-4">Create an Account!</h4>
+                            </div>
+                            <div class="user">
+                                {% if id_pelanggan_not_exist %}
+                                <h5 style="color: red; text-align: center;">ID Pelanggan tidak valid, coba ulangi</h5>
+                                {% endif %}
+                                <form method="post">
+                                    {% csrf_token %}
+                                    <div class="form-group"><input class="form-control form-control-user" type="text" id="fullname" placeholder="Fullname" name="nama_lengkap"></div>
+                                    <div class="form-group"><input class="form-control form-control-user" type="text" id="idmeter" placeholder="Id Meter" name="no_meteran"></div>
+                                    <div class="form-group"><input class="form-control form-control-user" type="email" id="inputemail" placeholder="Email Address" name="email"></div>
+                                    <div class="form-group"><input class="form-control form-control-user" type="password" id="passwordinput" placeholder="Password" name="password"></div>                    
+                                    <button class="btn btn-primary btn-block text-white btn-user" id="sub_btn" type="submit">Register Account</button>
+                                    <hr><a class="btn btn-primary btn-block text-white btn-google btn-user" role="button"><i class="fab fa-google"></i>&nbsp; Register with Google</a><a class="btn btn-primary btn-block text-white btn-facebook btn-user" role="button"><i class="fab fa-facebook-f"></i>&nbsp; Register with Facebook</a>
+                                    <hr>
+                                </form>
+                            </div>
+                            <div class="text-center"><a class="small" href="forgot-password">Forgot Password?</a></div>
+                            <div class="text-center"><a class="small" href="login">Already have an account? Login!</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'assets2/js/jquery.min.js'%}"></script>
+    <script src="{% static 'assets2/bootstrap/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'assets2/js/bs-init.js'%}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="{% static 'assets2/js/theme.js'%}"></script>
+</body>
+
+</html>

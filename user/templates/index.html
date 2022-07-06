@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Smart Energy Meter</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/simple-line-icons.min.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#">Smart Energy Meter</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary ml-auto" role="button" href="login">Sign In</a></div>
+        </div>
+    </nav>
+    <header class="text-center text-white masthead" style="background: url(&quot;{% static 'assets/img/wind-solar-sh-ps-201111_1605129741309_hpMain_16x9_1600.jpg' %}&quot;);background-size: cover;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5"><strong>Smart energy meter allows you to know, control, and predict your electricity usage</strong></h1>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <div class="form-row">
+                    <a class="btn btn-primary btn-block btn-lg" type="submit" style="text-align: center;" href="register" target="blank">Sign up!</a>
+                </div>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <section class="text-center bg-light features-icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Monitor</h3>
+                        <p class="lead mb-0">SEM (Smart Energy Meter) allows you to monitor your electricity</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-calendar m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Manage</h3>
+                        <p class="lead mb-0">SEM (Smart Energy Meter) allows you to manage your electricity<br></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-graph m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Predict</h3>
+                        <p class="lead mb-0">SEM (Smart Energy Meter) allows you to predict your electricity<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-6 text-white order-lg-2 showcase-img" style="background: url(&quot;{% static 'assets/img/Screenshot%20(642).png' %}&quot;) center / contain repeat;"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Monitoring</h2>
+                    <p class="lead mb-0">The smart energy meter has a friendly user interface, making it easier to monitor electricity usage</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 text-white showcase-img" style="background: url(&quot;{% static 'assets/img/pln.jpg' %}&quot;) right;"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Easy to Manage</h2>
+                    <p class="lead mb-0">Smart energy meters have the ability to manage electricity use so that electricity use can be controlled easily and efficiently</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 text-white order-lg-2 showcase-img" style="background: url(&quot;{% static 'assets/img/bg-showcase-2.jpg' %}&quot;);"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Advance Technology</h2>
+                    <p class="lead mb-0">Smart energy meter uses machine learning algorithms and artificial intelligence so that it can predict future electricity usage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center bg-light testimonials">
+        <div class="container">
+            <h2 class="mb-5">Meet the teams</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'assets/img/IMG_20220410_154643.jpg' %}">
+                        <h5>Muhammad Harish</h5>
+                        <p class="font-weight-light mb-0">Software Developer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'assets/img/1648345723676.jpg' %}">
+                        <h5>Fadhlan Adha</h5>
+                        <p class="font-weight-light mb-0">Machine Learning Developer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'assets/img/WhatsApp%20Image%202022-05-19%20at%209.16.58%20AM.jpg' %}">
+                        <h5>Pande Kadek Tresna Juliana</h5>
+                        <p class="font-weight-light mb-0">Hardware Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center text-white call-to-action" style="background:url(&quot;{% static 'assets/img/bg-masthead.jpg '%}&quot;) no-repeat center center;background-size:cover;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="email" placeholder="Enter your email..."></div>
+                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit">Sign up!</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left my-auto h-100">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Contact</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© Smart Energy Meter 2022. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right my-auto h-100">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-init.js' %}"></script>
+</body>
+
+</html>
