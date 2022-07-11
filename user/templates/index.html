@@ -88,7 +88,7 @@
         </div>
     </section>
     <section class="text-center bg-light testimonials">
-        <div class="container">
+        <div class="container" style="padding: 29px;">
             <h2 class="mb-5">Meet the teams</h2>
             <div class="row">
                 <div class="col-lg-4">
@@ -111,21 +111,48 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-2">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'assets/img/1648345723676.jpg' %}">
+                        <h5>Muhammad Harish</h5>
+                        <p class="font-weight-light mb-0">Software Developer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="{% static 'assets/img/1648345723676.jpg' %}">
+                        <h5>Fadhlan Adha</h5>
+                        <p class="font-weight-light mb-0">Machine Learning Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="text-center text-white call-to-action" style="background:url(&quot;{% static 'assets/img/bg-masthead.jpg '%}&quot;) no-repeat center center;background-size:cover;">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 mx-auto">
-                    <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+                    <h2 class="mb-4">Let's see your electrical usage</h2>
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                    <form>
-                        <div class="form-row">
-                            <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="email" placeholder="Enter your email..."></div>
-                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit">Sign up!</button></div>
-                        </div>
-                    </form>
+                    <div class="form-row">
+                        <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="text" placeholder="Enter your ID Meter..." id="idtext"></div>
+                        <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit" onclick="myFunction()">Check !</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 mx-auto" style="padding: 20px" id="myalert">
+                <h4 style="color: rgb(200, 0, 0); font-weight: bold;">Data not found, please enter correct ID Meter !</h4>
+            </div>
+            <div class="col-lg-12 col-xl-12"  style="padding: 29px;" id="myDIV">
+                <div class="card shadow mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h6 class="text-primary font-weight-bold m-0">Penggunaan perbulan Agustus - ID Meter : 1234567890 &nbsp;</h6>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="myChartAugust" width="400" height="100"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,6 +185,16 @@
     <script src="{% static 'assets/js/jquery.min.js' %}"></script>
     <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'assets/js/bs-init.js' %}"></script>
+
+    <script src="{% static 'assets2/js/jquery.min.js'%}"></script>
+    <script src="{% static 'assets2/bootstrap/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'assets2/js/chart.js'%}"></script>
+    <script src="{% static 'assets2/js/chart-home.js'%}"></script>
+    <script src="{% static 'assets2/js/bs-init.js'%}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'assets2/js/theme.js'%}"></script>
+
 </body>
 
 </html>

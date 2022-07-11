@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from pickle import FALSE
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mw4oy18bne5$uqo7hi_(-v8m$$h9k%hul5q-mpjqv5)e14jhky'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['bismillahsem.herokuapp.com']
+ALLOWED_HOSTS = ['bismillahsem.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
